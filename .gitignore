@@ -11,5 +11,5 @@ coverage/
 .aistudio/
 firebase-blueprint.json
 firestore.rules
-firebase-applet-config.json
+
 
