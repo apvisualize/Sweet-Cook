@@ -1,4 +1,10 @@
 import { Product, Testimonial, FAQItem } from './types';
+import chocoLavaImg from './assets/images/choco_lava_1784347082573.jpg';
+import nastarButterImg from './assets/images/nastar_butter_1784347112999.jpg';
+import kastengelEdamImg from './assets/images/kastengel_edam_1784347126893.jpg';
+import matchaAlmondImg from './assets/images/matcha_almond_1784347147360.jpg';
+import chocolateSeasaltImg from './assets/images/chocolate_seasalt_1784347176532.jpg';
+import redVelvetImg from './assets/images/red_velvet_1784347188426.jpg';
 
 export const PRODUCTS: Product[] = [
   {
@@ -7,7 +13,7 @@ export const PRODUCTS: Product[] = [
     description: 'Cookie premium bertekstur renyah di luar dan lembut di dalam dengan isian cokelat Belgia murni leleh yang melimpah.',
     price: 45000,
     rating: 4.9,
-    image: '/src/assets/images/choco_lava_1784347082573.jpg',
+    image: chocoLavaImg,
     category: 'special',
     isBestSeller: true
   },
@@ -17,7 +23,7 @@ export const PRODUCTS: Product[] = [
     description: 'Nastar legendaris beraroma butter Wijsman mewah dengan isian selai nanas madu alami buatan sendiri yang asam manis segar.',
     price: 125000,
     rating: 5.0,
-    image: '/src/assets/images/nastar_butter_1784347112999.jpg',
+    image: nastarButterImg,
     category: 'premium',
     isBestSeller: true
   },
@@ -27,7 +33,7 @@ export const PRODUCTS: Product[] = [
     description: 'Kue kering keju super renyah dibuat menggunakan paduan keju Edam tua impor premium dan taburan keju cheddar gurih melimpah.',
     price: 115000,
     rating: 4.8,
-    image: '/src/assets/images/kastengel_edam_1784347126893.jpg',
+    image: kastengelEdamImg,
     category: 'premium',
     isBestSeller: false
   },
@@ -37,7 +43,7 @@ export const PRODUCTS: Product[] = [
     description: 'Cookies matcha Jepang Uji berkualitas tinggi berpadu harmonis dengan manisnya serpihan cokelat putih berkualitas dan irisan almond renyah.',
     price: 48000,
     rating: 4.7,
-    image: '/src/assets/images/matcha_almond_1784347147360.jpg',
+    image: matchaAlmondImg,
     category: 'classic',
     isBestSeller: false
   },
@@ -47,7 +53,7 @@ export const PRODUCTS: Product[] = [
     description: 'Cookies cokelat hitam pekat (70% cocoa) yang kaya rasa dengan sensasi taburan butiran garam laut (Maldon sea salt) asli yang sangat mewah.',
     price: 48000,
     rating: 4.9,
-    image: '/src/assets/images/chocolate_seasalt_1784347176532.jpg',
+    image: chocolateSeasaltImg,
     category: 'classic',
     isBestSeller: true
   },
@@ -57,7 +63,7 @@ export const PRODUCTS: Product[] = [
     description: 'Cookies red velvet bertekstur fudgy dengan warna merah beludru cantik dan lumeran cream cheese frosting gurih-manis yang kaya krim.',
     price: 52000,
     rating: 4.8,
-    image: '/src/assets/images/red_velvet_1784347188426.jpg',
+    image: redVelvetImg,
     category: 'special',
     isBestSeller: false
   }
