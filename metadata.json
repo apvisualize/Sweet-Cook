@@ -1,0 +1,6 @@
+{
+  "name": "Sweet Crumbs",
+  "description": "Artisanal cookies premium yang dipanggang segar setiap hari, disajikan dalam desain e-commerce modern yang elegan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
