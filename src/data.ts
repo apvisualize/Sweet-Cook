@@ -1,16 +1,19 @@
 import { Product, Testimonial, FAQItem } from './types';
-import chocoLavaImg from './assets/images/choco_lava_1784347082573.jpg';
-import nastarButterImg from './assets/images/nastar_butter_1784347112999.jpg';
-import kastengelEdamImg from './assets/images/kastengel_edam_1784347126893.jpg';
-import matchaAlmondImg from './assets/images/matcha_almond_1784347147360.jpg';
-import chocolateSeasaltImg from './assets/images/chocolate_seasalt_1784347176532.jpg';
-import redVelvetImg from './assets/images/red_velvet_1784347188426.jpg';
+import chocoLavaImg from './assets/images/choco_lava_caroline_1784360378317.jpg';
+import chocoCheeseImg from './assets/images/choco_cheese_caroline_1784360394958.jpg';
+import oreoDrizzleImg from './assets/images/oreo_drizzle_caroline_1784360406839.jpg';
+import doubleChocolateImg from './assets/images/double_chocolate_caroline_1784360424549.jpg';
+import matchaSilverqueenImg from './assets/images/matcha_silverqueen_caroline_1784360438979.jpg';
+import matchaWhiteImg from './assets/images/matcha_white_caroline_1784360452490.jpg';
+import whiteButterImg from './assets/images/white_butter_caroline_1784360463932.jpg';
+import classicChocoImg from './assets/images/classic_choco_caroline_1784360475433.jpg';
+import redVelvetImg from './assets/images/red_velvet_caroline_1784360487508.jpg';
 
 export const PRODUCTS: Product[] = [
   {
     id: '1',
     name: 'Signature Choco Lava',
-    description: 'Cookie premium bertekstur renyah di luar dan lembut di dalam dengan isian cokelat Belgia murni leleh yang melimpah.',
+    description: 'Cookies premium bertekstur renyah di luar dan lumer di dalam dengan isian cokelat Belgia pekat meleleh yang melimpah.',
     price: 45000,
     rating: 4.9,
     image: chocoLavaImg,
@@ -19,49 +22,79 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: '2',
-    name: 'Nastar Premium Butter',
-    description: 'Nastar legendaris beraroma butter Wijsman mewah dengan isian selai nanas madu alami buatan sendiri yang asam manis segar.',
-    price: 125000,
-    rating: 5.0,
-    image: nastarButterImg,
-    category: 'premium',
-    isBestSeller: true
-  },
-  {
-    id: '3',
-    name: 'Kastengel Edam Gold',
-    description: 'Kue kering keju super renyah dibuat menggunakan paduan keju Edam tua impor premium dan taburan keju cheddar gurih melimpah.',
-    price: 115000,
+    name: 'Choco Cheese Bomb',
+    description: 'Cookies cokelat premium dengan isian cream cheese gurih nan lumer melimpah di setiap gigitan.',
+    price: 48000,
     rating: 4.8,
-    image: kastengelEdamImg,
-    category: 'premium',
+    image: chocoCheeseImg,
+    category: 'special',
     isBestSeller: false
   },
   {
-    id: '4',
-    name: 'Matcha White Almond',
-    description: 'Cookies matcha Jepang Uji berkualitas tinggi berpadu harmonis dengan manisnya serpihan cokelat putih berkualitas dan irisan almond renyah.',
+    id: '3',
+    name: 'Oreo White Drizzle',
+    description: 'Cookies lezat yang dipadukan dengan remahan Oreo renyah dan hiasan drizzle cokelat putih yang manis-lembut.',
     price: 48000,
-    rating: 4.7,
-    image: matchaAlmondImg,
+    rating: 4.9,
+    image: oreoDrizzleImg,
+    category: 'classic',
+    isBestSeller: true
+  },
+  {
+    id: '4',
+    name: 'Double Chocolate Sea Salt',
+    description: 'Cookies cokelat hitam pekat (70% cocoa) melimpah dengan sentuhan taburan butiran garam laut Maldon premium.',
+    price: 48000,
+    rating: 4.8,
+    image: doubleChocolateImg,
     category: 'classic',
     isBestSeller: false
   },
   {
     id: '5',
-    name: 'Dark Chocolate Sea Salt',
-    description: 'Cookies cokelat hitam pekat (70% cocoa) yang kaya rasa dengan sensasi taburan butiran garam laut (Maldon sea salt) asli yang sangat mewah.',
-    price: 48000,
-    rating: 4.9,
-    image: chocolateSeasaltImg,
-    category: 'classic',
+    name: 'Matcha SilverQueen',
+    description: 'Cookies matcha Jepang premium berpadu dengan kepingan cokelat SilverQueen autentik yang manis meleleh.',
+    price: 52000,
+    rating: 5.0,
+    image: matchaSilverqueenImg,
+    category: 'premium',
     isBestSeller: true
   },
   {
     id: '6',
-    name: 'Red Velvet Cheese Drop',
-    description: 'Cookies red velvet bertekstur fudgy dengan warna merah beludru cantik dan lumeran cream cheese frosting gurih-manis yang kaya krim.',
-    price: 52000,
+    name: 'Matcha White Chips',
+    description: 'Cookies rasa teh hijau matcha premium bertabur kepingan cokelat putih manis lembut yang berlimpah.',
+    price: 48000,
+    rating: 4.7,
+    image: matchaWhiteImg,
+    category: 'classic',
+    isBestSeller: false
+  },
+  {
+    id: '7',
+    name: 'White Chocolate Butter',
+    description: 'Cookies mentega premium beraroma harum vanila dengan taburan kepingan cokelat putih yang lembut.',
+    price: 45000,
+    rating: 4.8,
+    image: whiteButterImg,
+    category: 'premium',
+    isBestSeller: false
+  },
+  {
+    id: '8',
+    name: 'Classic Choco Chips',
+    description: 'Kue kering klasik legendaris bertabur chocolate chips berlimpah dengan aroma mentega Wijsman yang harum mewah.',
+    price: 45000,
+    rating: 4.9,
+    image: classicChocoImg,
+    category: 'premium',
+    isBestSeller: true
+  },
+  {
+    id: '9',
+    name: 'Red Velvet Premium',
+    description: 'Cookies red velvet bertekstur fudgy dengan warna merah beludru cantik dan rasa mewah.',
+    price: 48000,
     rating: 4.8,
     image: redVelvetImg,
     category: 'special',
@@ -96,13 +129,13 @@ export const TESTIMONIALS: Testimonial[] = [
 export const FAQS: FAQItem[] = [
   {
     id: 'faq-1',
-    question: 'Apakah cookies Sweet Crumbs bersertifikat Halal?',
-    answer: 'Ya! Semua produk cookies Sweet Crumbs dipanggang menggunakan 100% bahan baku bersertifikat halal, tanpa menggunakan alkohol, perisa non-halal, rum, atau gelatin babi. Kami sangat menjaga kehalalan proses pembuatan.'
+    question: 'Apakah cookies Caroline in. bersertifikat Halal?',
+    answer: 'Ya! Semua produk cookies Caroline in. dipanggang menggunakan 100% bahan baku bersertifikat halal, tanpa menggunakan alkohol, perisa non-halal, rum, atau gelatin babi. Kami sangat menjaga kehalalan proses pembuatan.'
   },
   {
     id: 'faq-2',
     question: 'Berapa lama masa kedaluwarsa cookies?',
-    answer: 'Karena dipanggang tanpa bahan pengawet kimia, ketahanan cookies bervariasi: Tipe kering (Kastengel & Nastar) dapat bertahan hingga 1 bulan dalam wadah kedap udara rapat. Tipe Soft-baked (Choco Lava, Matcha, Red Velvet, Sea Salt) paling baik dinikmati dalam waktu 7-10 hari pada suhu ruang, atau hingga 2 minggu jika disimpan di dalam lemari pendingin.'
+    answer: 'Karena dipanggang tanpa bahan pengawet kimia, ketahanan cookies bervariasi: Tipe Soft-baked (Choco Lava, Matcha, Red Velvet, Sea Salt) paling baik dinikmati dalam waktu 7-10 hari pada suhu ruang, atau hingga 2 minggu jika disimpan di dalam lemari pendingin.'
   },
   {
     id: 'faq-3',
@@ -112,7 +145,7 @@ export const FAQS: FAQItem[] = [
   {
     id: 'faq-4',
     question: 'Bagaimana cara menyajikan cookies agar rasa dan teksturnya maksimal?',
-    answer: 'Untuk tipe kering (Nastar & Kastengel), Anda bisa langsung menikmatinya bersama secangkir teh hangat atau kopi. Untuk tipe Soft-baked/Chewy Cookies, kami sangat menyarankan untuk memanaskannya terlebih dahulu di dalam microwave selama 10-15 detik, atau di dalam oven/air fryer selama 2-3 menit pada suhu 150°C agar cokelat dan cream cheesenya kembali meleleh sempurna.'
+    answer: 'Untuk tipe Soft-baked/Chewy Cookies, kami sangat menyarankan untuk memanaskannya terlebih dahulu di dalam microwave selama 10-15 detik, atau di dalam oven/air fryer selama 2-3 menit pada suhu 150°C agar cokelat dan cream cheesenya kembali meleleh sempurna.'
   },
   {
     id: 'faq-5',

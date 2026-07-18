@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'motion/react';
 import { Sparkles, ArrowRight, ShieldCheck, Award } from 'lucide-react';
-import heroCookiesImg from '../assets/images/hero_cookies_1784347035605.jpg';
+import heroCookiesImg from '../assets/images/hero_cookies_caroline_1784360365916.jpg';
 
 interface HeroProps {
   onExploreProducts: () => void;
@@ -138,7 +138,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
               <div className="relative overflow-hidden rounded-[20px] sm:rounded-[24px] aspect-[4/3] group">
                 <img
                   src={heroCookiesImg}
-                  alt="Freshly baked assorted luxury cookies Sweet Crumbs"
+                  alt="Freshly baked assorted luxury cookies Caroline in."
                   referrerPolicy="no-referrer"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-1000"
                 />

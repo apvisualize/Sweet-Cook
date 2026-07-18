@@ -16,7 +16,7 @@ export const Testimonials: React.FC = () => {
           </h2>
           <div className="h-1 w-16 sm:w-20 bg-primary mx-auto rounded-full" />
           <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed font-medium">
-            Kepuasan pelanggan adalah bumbu rahasia terbaik kami. Simak ulasan tulus dari para pelanggan setia Sweet Crumbs di berbagai wilayah Indonesia.
+            Kepuasan pelanggan adalah bumbu rahasia terbaik kami. Simak ulasan tulus dari para pelanggan setia Caroline in. di berbagai wilayah Indonesia.
           </p>
         </div>
 
@@ -86,12 +86,12 @@ export const Testimonials: React.FC = () => {
             <div>
               <h3 className="font-display text-lg sm:text-xl font-bold text-on-surface">Bagikan pengalaman manis Anda!</h3>
               <p className="text-xs sm:text-sm text-on-surface-variant font-medium mt-0.5 leading-relaxed">
-                Punya saran, cerita, atau ingin mengunggah kelezatan cookies kami di Instagram? Tag kami di <strong>@sweetcrumbs.id</strong>!
+                Punya saran, cerita, atau ingin mengunggah kelezatan cookies kami di Instagram? Tag kami di <strong>@caroline__cin</strong>!
               </p>
             </div>
           </div>
           <a
-            href="https://instagram.com"
+            href="https://instagram.com/caroline__cin"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 bg-primary hover:bg-primary-container text-on-primary font-bold rounded-xl text-xs sm:text-sm transition-colors cursor-pointer shrink-0"

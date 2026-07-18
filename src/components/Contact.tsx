@@ -47,18 +47,13 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
     {
       icon: <Phone className="w-5 h-5 text-primary" />,
       title: 'Customer Support / WA',
-      details: '+62 812-3456-789 (Senin - Minggu)'
+      details: '+62 851-2440-6221 (Senin - Kamis)'
     },
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: 'Hubungi Email',
       details: 'hello@sweetcrumbs.id / order@sweetcrumbs.id'
     },
-    {
-      icon: <Clock className="w-5 h-5 text-primary" />,
-      title: 'Jam Operasional Toko',
-      details: 'Setiap Hari: 08:00 WIB - 20:00 WIB (Kirim Instan Grab/Gojek)'
-    }
   ];
 
   return (
@@ -108,7 +103,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
                 <div className="absolute inset-0 bg-primary-container/10 pointer-events-none" />
                 <MapPin className="w-10 h-10 text-primary animate-bounce relative z-10" />
                 <div className="space-y-1 relative z-10">
-                  <h4 className="font-bold text-sm text-on-surface">Peta Lokasi Sweet Crumbs</h4>
+                  <h4 className="font-bold text-sm text-on-surface">Peta Lokasi Caroline in.</h4>
                   <p className="text-[10px] text-on-surface-variant font-medium leading-relaxed max-w-xs mx-auto">
                     Kembangan, Jakarta Barat (Pengiriman instant menjangkau seluruh wilayah Jabodetabek)
                   </p>

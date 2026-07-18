@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'motion/react';
 import { ShoppingBag, Truck, CreditCard, Send, MapPin, AlertCircle, CheckCircle, Info } from 'lucide-react';
 import { CartItem, CheckoutData } from '../types';
+import { SvgBca, SvgQris, SvgJne, SvgJnt, SvgPaxel } from './SvgIcons';
 
 interface CheckoutProps {
   cartItemsList: CartItem[];
@@ -125,7 +126,7 @@ export const Checkout: React.FC<CheckoutProps> = ({
 
     try {
       // Build WhatsApp message
-      const storeNumber = '628123456789'; // Mock Indonesian premium phone number
+      const storeNumber = '6285124406221'; // Mock Indonesian premium phone number
       const orderItemsText = cartItemsList
         .map(
           item =>
@@ -135,9 +136,9 @@ export const Checkout: React.FC<CheckoutProps> = ({
         )
         .join('\n');
 
-      const textMessage = `*🔴 PESANAN BARU - SWEET CRUMBS*
+      const textMessage = `*🔴 PESANAN BARU - CAROLINE IN.*
 --------------------------------------------
-Halo Sweet Crumbs! Saya ingin memesan kue kering premium sebagai berikut:
+Halo Caroline in.! Saya ingin memesan kue kering premium sebagai berikut:
 
 *Rincian Produk:*
 ${orderItemsText}
@@ -155,9 +156,7 @@ ${orderItemsText}
 • *Pilihan:* ${
         formData.paymentMethod === 'qris'
           ? 'QRIS Otomatis (E-Wallet)'
-          : formData.paymentMethod === 'bca'
-          ? 'Transfer BCA (812903829 a.n. Sweet Crumbs)'
-          : 'Transfer Mandiri (13200982929 a.n. Sweet Crumbs)'
+          : 'Transfer BCA (812903829 a.n. Caroline in.)'
       }
 
 ${formData.notes.trim() ? `*Catatan Khusus:* \n"${formData.notes}"\n` : ''}
@@ -450,34 +449,47 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
                   )}
 
                   <div className="grid grid-cols-1 gap-3">
-                    {courierOptions.map((opt) => (
-                      <label
-                        key={opt.id}
-                        className={`p-4 rounded-2xl border flex items-center justify-between cursor-pointer transition-all ${
-                          formData.courier === opt.id
-                            ? 'bg-primary/5 dark:bg-primary/10 border-primary shadow-sm'
-                            : 'bg-surface border-outline-variant/30 hover:border-primary/40'
-                        }`}
-                      >
-                        <div className="flex items-center gap-3">
-                          <input
-                            type="radio"
-                            name="courier"
-                            value={opt.id}
-                            checked={formData.courier === opt.id}
-                            onChange={handleInputChange}
-                            className="text-primary focus:ring-primary"
-                          />
-                          <div>
-                            <span className="text-sm font-bold text-on-surface block">{opt.name}</span>
-                            <span className="text-xs text-on-surface-variant font-medium block mt-0.5">Estimasi: {opt.estimate}</span>
+                    {courierOptions.map((opt) => {
+                      const courierLogo = opt.id === 'jne' ? (
+                        <SvgJne className="h-6 w-auto shrink-0" />
+                      ) : opt.id === 'jnt' ? (
+                        <SvgJnt className="h-6 w-auto shrink-0" />
+                      ) : (
+                        <SvgPaxel className="h-6 w-auto shrink-0" />
+                      );
+
+                      return (
+                        <label
+                          key={opt.id}
+                          className={`p-4 rounded-2xl border flex items-center justify-between cursor-pointer transition-all ${
+                            formData.courier === opt.id
+                              ? 'bg-primary/5 dark:bg-primary/10 border-primary shadow-sm'
+                              : 'bg-surface border-outline-variant/30 hover:border-primary/40'
+                          }`}
+                        >
+                          <div className="flex items-center gap-3">
+                            <input
+                              type="radio"
+                              name="courier"
+                              value={opt.id}
+                              checked={formData.courier === opt.id}
+                              onChange={handleInputChange}
+                              className="text-primary focus:ring-primary"
+                            />
+                            <div className="flex items-center gap-3">
+                              {courierLogo}
+                              <div>
+                                <span className="text-sm font-bold text-on-surface block">{opt.name}</span>
+                                <span className="text-xs text-on-surface-variant font-medium block mt-0.5">Estimasi: {opt.estimate}</span>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <span className={`text-sm font-extrabold ${isEligibleForFreeShipping ? 'text-emerald-600 line-through text-xs' : 'text-primary'}`}>
-                          {formatIDR(opt.price)}
-                        </span>
-                      </label>
-                    ))}
+                          <span className={`text-sm font-extrabold ${isEligibleForFreeShipping ? 'text-emerald-600 line-through text-xs' : 'text-primary'}`}>
+                            {formatIDR(opt.price)}
+                          </span>
+                        </label>
+                      );
+                    })}
                   </div>
                 </div>
 
@@ -488,10 +500,10 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
                     <h3 className="text-base sm:text-lg font-bold text-on-surface">3. Metode Pembayaran</h3>
                   </div>
 
-                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {/* QRIS */}
                     <label
-                      className={`p-4 rounded-2xl border cursor-pointer transition-all text-center flex flex-col items-center justify-center gap-2 ${
+                      className={`p-4 rounded-2xl border cursor-pointer transition-all text-center flex flex-col items-center justify-center gap-2.5 ${
                         formData.paymentMethod === 'qris'
                           ? 'bg-primary/5 dark:bg-primary/10 border-primary shadow-sm'
                           : 'bg-surface border-outline-variant/30 hover:border-primary/40'
@@ -505,7 +517,9 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
                         onChange={handleInputChange}
                         className="sr-only"
                       />
-                      <span className="material-symbols-outlined text-primary text-3xl">qr_code_2</span>
+                      <div className="flex items-center justify-center h-8">
+                        <SvgQris className="h-7 w-auto" />
+                      </div>
                       <div>
                         <span className="text-xs sm:text-sm font-bold text-on-surface block">QRIS Otomatis</span>
                         <span className="text-[10px] text-on-surface-variant font-medium block mt-0.5">Semua E-Wallet</span>
@@ -514,7 +528,7 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
 
                     {/* BCA */}
                     <label
-                      className={`p-4 rounded-2xl border cursor-pointer transition-all text-center flex flex-col items-center justify-center gap-2 ${
+                      className={`p-4 rounded-2xl border cursor-pointer transition-all text-center flex flex-col items-center justify-center gap-2.5 ${
                         formData.paymentMethod === 'bca'
                           ? 'bg-primary/5 dark:bg-primary/10 border-primary shadow-sm'
                           : 'bg-surface border-outline-variant/30 hover:border-primary/40'
@@ -528,33 +542,12 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
                         onChange={handleInputChange}
                         className="sr-only"
                       />
-                      <span className="text-sm font-extrabold text-blue-600 font-sans tracking-wide block bg-blue-50 px-2.5 py-1 rounded-md">BCA</span>
+                      <div className="flex items-center justify-center h-8">
+                        <SvgBca className="h-7 w-auto" />
+                      </div>
                       <div>
                         <span className="text-xs sm:text-sm font-bold text-on-surface block">Transfer BCA</span>
                         <span className="text-[10px] text-on-surface-variant font-medium block mt-0.5">812903829</span>
-                      </div>
-                    </label>
-
-                    {/* Mandiri */}
-                    <label
-                      className={`p-4 rounded-2xl border cursor-pointer transition-all text-center flex flex-col items-center justify-center gap-2 ${
-                        formData.paymentMethod === 'mandiri'
-                          ? 'bg-primary/5 dark:bg-primary/10 border-primary shadow-sm'
-                          : 'bg-surface border-outline-variant/30 hover:border-primary/40'
-                      }`}
-                    >
-                      <input
-                        type="radio"
-                        name="paymentMethod"
-                        value="mandiri"
-                        checked={formData.paymentMethod === 'mandiri'}
-                        onChange={handleInputChange}
-                        className="sr-only"
-                      />
-                      <span className="text-sm font-extrabold text-amber-500 font-sans tracking-wide block bg-amber-50 px-2.5 py-1 rounded-md">MANDIRI</span>
-                      <div>
-                        <span className="text-xs sm:text-sm font-bold text-on-surface block">Transfer Mandiri</span>
-                        <span className="text-[10px] text-on-surface-variant font-medium block mt-0.5">13200982929</span>
                       </div>
                     </label>
                   </div>
@@ -654,7 +647,7 @@ Terima kasih! Mohon segera infokan konfirmasi pesanan dan instruksi pembayaran s
 
                 {/* Security trust notice */}
                 <p className="text-[10px] text-center text-on-surface-variant/70 leading-relaxed font-semibold max-w-xs mx-auto">
-                  🛡️ Transaksi Anda dijamin aman. Seluruh data dienkripsi, dikonfirmasi dan dikoordinasikan langsung ke admin WhatsApp Sweet Crumbs.
+                  🛡️ Transaksi Anda dijamin aman. Seluruh data dienkripsi, dikonfirmasi dan dikoordinasikan langsung ke admin WhatsApp Caroline in.
                 </p>
               </div>
 

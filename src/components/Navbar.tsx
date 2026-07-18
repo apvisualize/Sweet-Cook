@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { ShoppingBag, Moon, Sun, Menu, X, Cookie } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logoCarolineImg from '../assets/images/logo_caroline_1784360349102.jpg';
 
 interface NavbarProps {
   cartCount: number;
@@ -97,15 +98,15 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, activeSec
             onClick={() => handleScrollTo('hero')}
             className="flex items-center gap-2 group cursor-pointer focus:outline-none"
           >
-            <div className="bg-primary hover:bg-primary-container p-2 rounded-xl transition-colors text-on-primary">
-              <Cookie className="w-6 h-6 animate-spin-slow group-hover:scale-110 transition-transform" />
+            <div className="overflow-hidden rounded-xl w-10 h-10 transition-transform group-hover:scale-105 border border-outline-variant/30 flex items-center justify-center bg-white">
+              <img src={logoCarolineImg} alt="Caroline in. Logo" className="w-full h-full object-cover" />
             </div>
             <div className="text-left">
               <span className="font-display text-xl sm:text-2xl font-bold tracking-tight text-primary block leading-none">
-                Sweet Crumbs
+                Caroline in.
               </span>
               <span className="text-[10px] font-sans font-medium text-on-surface-variant uppercase tracking-widest block mt-0.5">
-                Premium Artisanal
+                Premium Soft Cookies
               </span>
             </div>
           </button>

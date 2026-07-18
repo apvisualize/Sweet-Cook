@@ -43,7 +43,7 @@ export const Features: React.FC = () => {
           </h2>
           <div className="h-1 w-16 sm:w-20 bg-primary mx-auto rounded-full" />
           <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed">
-            Sweet Crumbs bukan sekadar kue kering biasa. Kami mendedikasikan waktu, keahlian, dan bahan-bahan terbaik dunia untuk menghadirkan mahakarya cookies premium di rumah Anda.
+            Caroline in. bukan sekadar kue kering biasa. Kami mendedikasikan waktu, keahlian, dan bahan-bahan terbaik dunia untuk menghadirkan mahakarya cookies premium di rumah Anda.
           </p>
         </div>
 

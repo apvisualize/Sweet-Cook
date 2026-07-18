@@ -51,7 +51,7 @@ export const Products: React.FC<ProductsProps> = ({ onAddToCart, cartItems }) =>
           </h2>
           <div className="h-1 w-16 sm:w-20 bg-primary mx-auto rounded-full" />
           <p className="text-sm sm:text-base text-on-surface-variant leading-relaxed font-medium">
-            Mulai dari klasik hingga eksklusif tradisional, rasakan perpaduan tekstur lembut premium dengan bahan kualitas terbaik dari resep rahasia dapur Sweet Crumbs.
+            Rasakan perpaduan tekstur lumer premium dengan bahan berkualitas terbaik dari resep rahasia dapur Caroline in.
           </p>
         </div>
 
