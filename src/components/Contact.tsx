@@ -53,7 +53,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: 'Hubungi Email',
-      details: `${STORE_CONFIG.email} / ${STORE_CONFIG.emailAlt}`
+      details: `${STORE_CONFIG.email}`
     },
     {
       icon: <Clock className="w-5 h-5 text-primary" />,
