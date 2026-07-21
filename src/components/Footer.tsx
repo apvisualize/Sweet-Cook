@@ -89,7 +89,7 @@ export const Footer: React.FC = () => {
             <ul className="space-y-3.5">
               <li className="flex gap-3 items-start text-xs sm:text-sm text-on-surface-variant font-medium">
                 <MapPin className="w-4.5 h-4.5 text-primary shrink-0 mt-0.5" />
-                <span>Jl. Meruya Ilir Raya No. 45, Kembangan, Jakarta Barat, DKI Jakarta, 11620</span>
+                <span>Pulo Jahe, Jakarta Timur</span>
               </li>
               <li className="flex gap-3 items-center text-xs sm:text-sm text-on-surface-variant font-medium">
                 <Phone className="w-4.5 h-4.5 text-primary shrink-0" />
@@ -97,7 +97,7 @@ export const Footer: React.FC = () => {
               </li>
               <li className="flex gap-3 items-center text-xs sm:text-sm text-on-surface-variant font-medium">
                 <Mail className="w-4.5 h-4.5 text-primary shrink-0" />
-                <span>hello@carolinein.id / order@carolinein.id</span>
+                <span>carolinacindyjp@gmail.com</span>
               </li>
             </ul>
           </div>

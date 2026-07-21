@@ -42,7 +42,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
     {
       icon: <MapPin className="w-5 h-5 text-primary" />,
       title: 'Workshop Bakehouse',
-      details: 'Jl. Meruya Ilir Raya No. 45, Kembangan, Jakarta Barat, DKI Jakarta, 11620'
+      details: 'Pulo Jahe, Jakarta Timur'
     },
     {
       icon: <Phone className="w-5 h-5 text-primary" />,
@@ -52,7 +52,7 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: 'Hubungi Email',
-      details: 'hello@sweetcrumbs.id / order@sweetcrumbs.id'
+      details: 'carolinacindyjp@gmail.com'
     },
   ];
 
@@ -96,28 +96,6 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
                 </div>
               ))}
             </div>
-
-            {/* Premium Maps Mockup (SVG Illustration / Elegant display) */}
-            <div className="p-2 rounded-2xl bg-surface-container-high dark:bg-surface-container-lowest border border-outline-variant/20 custom-shadow overflow-hidden">
-              <div className="bg-surface rounded-xl p-4 flex flex-col justify-between items-center text-center space-y-4 min-h-[160px] relative overflow-hidden">
-                <div className="absolute inset-0 bg-primary-container/10 pointer-events-none" />
-                <MapPin className="w-10 h-10 text-primary animate-bounce relative z-10" />
-                <div className="space-y-1 relative z-10">
-                  <h4 className="font-bold text-sm text-on-surface">Peta Lokasi Caroline in.</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium leading-relaxed max-w-xs mx-auto">
-                    Kembangan, Jakarta Barat (Pengiriman instant menjangkau seluruh wilayah Jabodetabek)
-                  </p>
-                </div>
-                <button
-                  onClick={() => window.open('https://maps.google.com', '_blank')}
-                  className="px-4 py-2 bg-primary hover:bg-primary-container text-on-primary font-bold rounded-lg text-xs transition-colors cursor-pointer relative z-10"
-                >
-                  Buka Google Maps
-                </button>
-              </div>
-            </div>
-
-          </div>
 
           {/* Right Column: Contact Inquiry Form */}
           <div className="lg:col-span-7 bg-surface-container-low dark:bg-surface-container/30 border border-outline-variant/20 rounded-[32px] p-6 sm:p-8 custom-shadow">
