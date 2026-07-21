@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send } from 'lucide-react';
+import { STORE_CONFIG } from '../data';
 
 interface ContactProps {
   onShowToast: (message: string, type: 'success' | 'error') => void;
@@ -42,19 +43,25 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
     {
       icon: <MapPin className="w-5 h-5 text-primary" />,
       title: 'Workshop Bakehouse',
-      details: 'Pulo Jahe, Jakarta Timur'
+      details: STORE_CONFIG.address
     },
     {
       icon: <Phone className="w-5 h-5 text-primary" />,
       title: 'Customer Support / WA',
-      details: '+62 851-2440-6221 (Senin - Kamis)'
+      details: `${STORE_CONFIG.phoneFormatted} (Senin - Minggu)`
     },
     {
       icon: <Mail className="w-5 h-5 text-primary" />,
       title: 'Hubungi Email',
-      details: 'carolinacindyjp@gmail.com'
+      details: `${STORE_CONFIG.email} / ${STORE_CONFIG.emailAlt}`
     },
+    {
+      icon: <Clock className="w-5 h-5 text-primary" />,
+      title: 'Jam Operasional Toko',
+      details: STORE_CONFIG.operationalHours
+    }
   ];
+
 
   return (
     <section id="kontak" className="py-16 sm:py-20 lg:py-24 bg-surface">
@@ -96,6 +103,10 @@ export const Contact: React.FC<ContactProps> = ({ onShowToast }) => {
                 </div>
               ))}
             </div>
+
+            {/* Contact info list */}
+
+          </div>
 
           {/* Right Column: Contact Inquiry Form */}
           <div className="lg:col-span-7 bg-surface-container-low dark:bg-surface-container/30 border border-outline-variant/20 rounded-[32px] p-6 sm:p-8 custom-shadow">
