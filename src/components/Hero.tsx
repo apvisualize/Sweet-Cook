@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Sparkles, ArrowRight, ShieldCheck, Award } from 'lucide-react';
+import { Sparkles, ArrowRight, ShieldCheck, Award, Cookie } from 'lucide-react';
 import heroCookiesImg from '../assets/images/hero_cookies_caroline_1784360365916.jpg';
 
 interface HeroProps {
@@ -31,7 +31,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
               className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[11px] sm:text-xs font-semibold tracking-wide uppercase mx-auto lg:mx-0"
             >
               <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse shrink-0" />
-              <span>Artisanal Cookies Terbaik di Kelasnya</span>
+              <span>ARTISANAL COOKIES TERBAIK DI KELASNYA • Freshly Baked Every Day</span>
             </motion.div>
 
             {/* Display Typography Title */}
@@ -42,8 +42,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-on-surface leading-[1.15] sm:leading-[1.12]"
               >
-                Cita Rasa Mewah <br className="hidden sm:inline" />
-                <span className="text-primary italic font-medium">di Setiap Gigitan</span>
+                Freshly Baked. <br className="hidden sm:inline" />
+                <span className="text-primary italic font-medium">Made to Make You Smile.</span>
               </motion.h1>
 
               <motion.p
@@ -52,7 +52,7 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
                 transition={{ duration: 0.7, delay: 0.3 }}
                 className="text-sm sm:text-base md:text-lg text-on-surface-variant max-w-2xl mx-auto lg:mx-0 font-medium leading-relaxed"
               >
-                Dipanggang segar setiap hari menggunakan <strong className="text-primary font-semibold">100% Butter Wijsman</strong> asli, Belgian chocolate murni, dan bahan-bahan organik pilihan tanpa bahan pengawet. Kelezatan lumer autentik khusus untuk pencinta cookies sejati.
+                Kami percaya cookies terbaik bukan soal bahan yang paling mahal, tetapi tentang proses yang konsisten, resep yang tepat, dan rasa yang selalu membuatmu ingin kembali.
               </motion.p>
             </div>
 
@@ -93,29 +93,29 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
             >
               <div className="flex items-center gap-3 text-left">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
-                  <ShieldCheck className="w-5 h-5" />
+                  <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">100% Halal</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Bahan Premium</p>
+                  <h4 className="text-xs font-bold text-on-surface">Freshly Baked</h4>
+                  <p className="text-[10px] text-on-surface-variant font-medium">Dipanggang Setiap Hari</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-left">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
-                  <Award className="w-5 h-5" />
+                  <Cookie className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">Wijsman Butter</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Aroma Mewah</p>
+                  <h4 className="text-xs font-bold text-on-surface">Soft & Gooey</h4>
+                  <p className="text-[10px] text-on-surface-variant font-medium">Lembut di Dalam</p>
                 </div>
               </div>
               <div className="flex items-center gap-3 text-left col-span-2 sm:col-span-1 justify-center sm:justify-start">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
-                  <Sparkles className="w-5 h-5" />
+                  <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">Tanpa Pengawet</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Freshly Baked</p>
+                  <h4 className="text-xs font-bold text-on-surface">No Preservatives</h4>
+                  <p className="text-[10px] text-on-surface-variant font-medium">Tanpa Bahan Pengawet</p>
                 </div>
               </div>
             </motion.div>
