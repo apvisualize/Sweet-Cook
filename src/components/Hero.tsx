@@ -29,10 +29,10 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: 0.15 }}
-                className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-on-surface leading-[1.15] sm:leading-[1.12]"
+                className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-on-surface leading-[1.2] lg:leading-[1.12]"
               >
-                Freshly Baked <br className="hidden sm:inline" />
-                <span className="text-primary italic font-medium">Made to Make You Smile</span>
+                <span className="block">Freshly Baked</span>
+                <span className="text-primary italic font-medium block mt-1 lg:mt-2">Made to Make You Smile</span>
               </motion.h1>
 
               <motion.p
@@ -78,33 +78,35 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8, delay: 0.6 }}
-              className="pt-4 grid grid-cols-2 sm:grid-cols-3 gap-4 sm:gap-6 max-w-lg mx-auto lg:mx-0"
+              className="pt-6 grid grid-cols-3 gap-2 sm:gap-6 max-w-lg sm:max-w-2xl mx-auto lg:mx-0 border-t border-outline-variant/10 lg:border-0"
             >
-              <div className="flex items-center gap-3 text-left">
+              <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-left gap-2 lg:gap-3.5">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
                   <Sparkles className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">Freshly Baked</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Dipanggang Setiap Hari</p>
+                  <h4 className="text-[11px] sm:text-xs font-bold text-on-surface leading-tight">Freshly Baked</h4>
+                  <p className="text-[9px] sm:text-[10px] text-on-surface-variant font-medium mt-0.5 lg:mt-1">Dipanggang Setiap Hari</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-left">
+              
+              <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-left gap-2 lg:gap-3.5">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
                   <Cookie className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">Soft & Gooey</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Lembut di Dalam</p>
+                  <h4 className="text-[11px] sm:text-xs font-bold text-on-surface leading-tight">Soft & Gooey</h4>
+                  <p className="text-[9px] sm:text-[10px] text-on-surface-variant font-medium mt-0.5 lg:mt-1">Lembut di Dalam</p>
                 </div>
               </div>
-              <div className="flex items-center gap-3 text-left col-span-2 sm:col-span-1 justify-center sm:justify-start">
+              
+              <div className="flex flex-col items-center lg:flex-row lg:items-center text-center lg:text-left gap-2 lg:gap-3.5">
                 <div className="p-2 rounded-xl bg-surface-container-high dark:bg-surface-container-lowest text-primary shrink-0">
                   <ShieldCheck className="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 className="text-xs font-bold text-on-surface">No Preservatives</h4>
-                  <p className="text-[10px] text-on-surface-variant font-medium">Tanpa Bahan Pengawet</p>
+                  <h4 className="text-[11px] sm:text-xs font-bold text-on-surface leading-tight">No Preservatives</h4>
+                  <p className="text-[9px] sm:text-[10px] text-on-surface-variant font-medium mt-0.5 lg:mt-1">Tanpa Bahan Pengawet</p>
                 </div>
               </div>
             </motion.div>
