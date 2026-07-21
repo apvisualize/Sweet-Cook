@@ -6,23 +6,18 @@ export const Features: React.FC = () => {
   const listFeatures = [
     {
       icon: <Award className="w-6 h-6" />,
-      title: '100% Butter Wijsman',
-      description: 'Aroma mentega Wijsman Belanda premium yang melimpah memberikan wangi harum legendaris dan rasa lumer autentik di lidah.'
+      title: 'Homemade Recipe',
+      description: 'Resep yang kami kembangkan untuk menghasilkan cookies dengan tekstur chruncy di luar dan lembut di dalam dengan memiliki rasa yang seimbang di setiap gigitan.'
     },
     {
       icon: <Cookie className="w-6 h-6" />,
-      title: 'Cokelat Belgia Murni',
-      description: 'Isian dark chocolate Belgia murni berkualitas tinggi (callebaut style) untuk rasa cokelat mewah yang kaya dan tidak bikin eneg.'
+      title: 'Cokelat Melimpah',
+      description: 'Menggunakan cokelat berkualitas yang memberikan rasa lebih kaya, lumer, dan tetap nikmat tanpa terasa berlebihan.'
     },
     {
       icon: <Sparkles className="w-6 h-6" />,
       title: 'Freshly Baked Daily',
-      description: 'Setiap toples cookies dipanggang segar setiap pagi sesuai pesanan (made-to-order) sehingga kualitas kesegaran selalu terjaga.'
-    },
-    {
-      icon: <Gift className="w-6 h-6" />,
-      title: 'Hampers Premium Box',
-      description: 'Dikemas cantik dengan toples silinder tebal kedap udara berlapis segel alumunium dan gift box tebal mewah, sangat layak untuk hantaran.'
+      description: 'Dipanggang setelah pesanan diterima agar cookies sampai dalam kondisi lebih fresh dan kualitasnya tetap terjaga.'
     },
     {
       icon: <ShieldAlert className="w-6 h-6" />,

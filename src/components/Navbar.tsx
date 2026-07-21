@@ -106,7 +106,7 @@ export const Navbar: React.FC<NavbarProps> = ({ cartCount, onOpenCart, activeSec
                 Caroline in.
               </span>
               <span className="text-[10px] font-sans font-medium text-on-surface-variant uppercase tracking-widest block mt-0.5">
-                Premium Soft Cookies
+                bite before deadline
               </span>
             </div>
           </button>

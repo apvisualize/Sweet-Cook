@@ -22,17 +22,6 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
           
           {/* Hero Left Content */}
           <div className="lg:col-span-7 space-y-6 sm:space-y-8 text-center lg:text-left">
-            
-            {/* Elegant Top Badge */}
-            <motion.div
-              initial={{ opacity: 0, y: 15 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-primary/10 border border-primary/20 text-primary text-[11px] sm:text-xs font-semibold tracking-wide uppercase mx-auto lg:mx-0"
-            >
-              <Sparkles className="w-3.5 h-3.5 text-primary animate-pulse shrink-0" />
-              <span>ARTISANAL COOKIES TERBAIK DI KELASNYA • Freshly Baked Every Day</span>
-            </motion.div>
 
             {/* Display Typography Title */}
             <div className="space-y-3 sm:space-y-4">
@@ -42,8 +31,8 @@ export const Hero: React.FC<HeroProps> = ({ onExploreProducts }) => {
                 transition={{ duration: 0.7, delay: 0.15 }}
                 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-on-surface leading-[1.15] sm:leading-[1.12]"
               >
-                Freshly Baked. <br className="hidden sm:inline" />
-                <span className="text-primary italic font-medium">Made to Make You Smile.</span>
+                Freshly Baked <br className="hidden sm:inline" />
+                <span className="text-primary italic font-medium">Made to Make You Smile</span>
               </motion.h1>
 
               <motion.p

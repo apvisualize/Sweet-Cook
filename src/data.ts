@@ -105,24 +105,24 @@ export const PRODUCTS: Product[] = [
 export const TESTIMONIALS: Testimonial[] = [
   {
     id: '1',
-    name: 'Amanda Setyawati',
-    role: 'Pencinta Dessert, Jakarta',
-    quote: 'Sangat premium! Signature Choco Lava-nya beneran meleleh pas dihangatkan sebentar, cokelatnya manis pas dan gak bikin eneg. Kemasannya mewah sekali, sangat cocok dikirim untuk hampers.',
-    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150'
+    name: 'Alvin',
+    role: 'Pelanggan Setia',
+    quote: 'Packaging-nya rapi dan cookies datang masih fresh. Rasanya manisnya pas, nggak bikin eneg. Favoritku Original Choco.',
+    image: 'https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&q=80&w=150'
   },
   {
     id: '2',
-    name: 'Budi Hartono',
-    role: 'Pakar Keju Kuliner, Bandung',
-    quote: 'Kastengel Edam Gold-nya luar biasa gurih! Keju Edam tuanya terasa pekat, garing di luar tapi lumer di mulut. Anak dan istri di rumah rebutan makan kastengel ini.',
-    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150'
+    name: 'Tiara',
+    role: 'Pencinta Cookies',
+    quote: 'Udah beberapa kali repeat order. Rasanya konsisten dan selalu fresh. Cocok buat teman nugas',
+    image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150'
   },
   {
     id: '3',
-    name: 'Clarissa Tan',
-    role: 'Food Blogger, Surabaya',
-    quote: 'Nastar Premium Butter di sini adalah yang terbaik yang pernah saya coba. Wangi butternya langsung tercium begitu toples dibuka, lumer di lidah, dan selai nanas madunya beneran premium buatan sendiri.',
-    image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150'
+    name: 'Risen',
+    role: 'Pencinta Dessert',
+    quote: 'Harganya masih masuk akal buat ukuran homemade cookies.',
+    image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150'
   }
 ];
 
@@ -135,7 +135,7 @@ export const FAQS: FAQItem[] = [
   {
     id: 'faq-2',
     question: 'Berapa lama masa kedaluwarsa cookies?',
-    answer: 'Karena dipanggang tanpa bahan pengawet kimia, ketahanan cookies bervariasi: Tipe Soft-baked (Choco Lava, Matcha, Red Velvet, Sea Salt) paling baik dinikmati dalam waktu 7-10 hari pada suhu ruang, atau hingga 2 minggu jika disimpan di dalam lemari pendingin.'
+    answer: 'paling baik dinikmati dalam waktu 4-6 hari pada suhu ruang dan 7 hari pada lemari pendingin'
   },
   {
     id: 'faq-3',
@@ -153,3 +153,28 @@ export const FAQS: FAQItem[] = [
     answer: 'Sangat bisa! Kami menyediakan layanan hampers kustomisasi lengkap dengan pita satin premium, kartu ucapan elegan bergaya kaligrafi, serta sleeve box bermerek. Silakan hubungi kami via WhatsApp di nomor resmi kami untuk mendiskusikan tema, anggaran, dan jumlah pesanan Anda.'
   }
 ];
+
+export const STORE_CONFIG = {
+  // Nomor WA Toko (Harus angka saja, diawali kode negara seperti 62, tanpa spasi/simbol/titik)
+  phone: '6285124406221',
+  
+  // Tampilan nomor WA di halaman website
+  phoneFormatted: '+62 851-2440-6221',
+  
+  // Username Instagram toko Anda (tanpa tanda @)
+  instagram: 'caroline_in',
+  
+  // URL lengkap profil Instagram Anda
+  instagramUrl: 'https://instagram.com/caroline_in',
+
+  // Email resmi toko Anda
+  email: 'carolinacindyjp@gmail.com',
+  emailAlt: 'carolinacindyjp@gmail.com',
+
+  // Alamat Workshop / Toko Anda
+  address: 'Pulo Jahe, Jakarta Timur',
+
+  // Jam Operasional (Tanpa jam spesifik, misal: Setiap Hari / Senin-Minggu)
+  operationalHours: 'Setiap Hari (Kirim Instan Grab/Gojek)'
+};
+
